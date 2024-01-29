@@ -1,45 +1,113 @@
 body {
-    background: rgb(36, 29, 79);
-}
-
-.header {
-    background: rgb(73, 75, 133);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    justify-content: space-between;
-    font-weight: bold;
-}
-
-ul {
-    list-style-type: none;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    display: flex;
-    gap: 50px;
-    font-size: 30px; 
+    box-sizing: border-box;
+    background-color: #ecf0f1; /* Light Gray background color */
 }
 
-.logo {
-    font-size: 70px;
-    color: bisque;
-}
-
-a {
-    color: bisque;
-    text-decoration: none;
-}
-
-p {
+header {
+    background-color: #e74c3c; /* Red color */
+    color: #fff;
     text-align: center;
-    color: bisque;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    
+.search-bar {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar input {
+    padding: 0.5em;
+    border: none;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.search-bar button {
+    background-color: #3498db; /* Blue color */
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
+}
+
+.auth-buttons {
+    margin-top: 1em;
+    display: flex;
+    gap: 1em;
+}
+
+.signup-button,
+.login-button {
+    background-color: #2ecc71; /* Green color for Sign Up button */
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: #e67e22; /* Orange color for Login button */
+}
+
+.signup-button:hover,
+.login-button:hover {
+    filter: brightness(90%);
+}
+
+main {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    margin-bottom: 2em;
+    max-width: 600px;
+}
+
+.creative-image-section {
+    text-align: center;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-gallery img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #e74c3c; /* Red color */
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
